@@ -19,9 +19,15 @@ module.exports = function(app) {
         },
         { 
           id: 3,
-          name: 'Robo',
+          name: 'Robo14',
           handicap: '18.1',
           updated: '2 days ago'
+        },
+        { 
+          id: 4,
+          name: 'Shortnstrait',
+          handicap: '16.0',
+          updated: '11 days ago'
         }
       ]
     });
