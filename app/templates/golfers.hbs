@@ -1,0 +1,30 @@
+<div class="top-header">
+	<h2 class="header-title" id="title">Old Dudes Golf</h2>
+	<p>Tracking the saddest bunch of golfers in SoCal.</p>
+
+	{{input placeholder="Filter golfers"}}
+
+</div>
+
+<div class="container">
+	<table class="table golfer-table">
+		<thead>
+			<tr>
+				<th>GOLFER</th>
+				<th>HANDICAP</th>
+				<th>UPDATED</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each golfer in model}}
+				<tr>
+					<td class="name">{{golfer.name}}</td>
+					<td class="handicap">{{golfer.handicap}}</td>
+					<td class="updated">{{golfer.updated}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>
+
+{{outlet}}
