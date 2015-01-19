@@ -1,35 +1,42 @@
+var golfers = [
+  { 
+    id: 1,
+    name: 'Shaner',
+    handicap: '18.6',
+    updated: '12 days ago',
+    rounds: [1, 2, 4]
+  },
+  { 
+    id: 2,
+    name: 'LongDavid',
+    handicap: '15.9',
+    updated: '19 days ago',
+    rounds: [3]
+  },
+  { 
+    id: 3,
+    name: 'Robo14',
+    handicap: '18.1',
+    updated: '2 days ago',
+    rounds: []
+  },
+  { 
+    id: 4,
+    name: 'Shortnstrait',
+    handicap: '16.0',
+    updated: '11 days ago',
+    rounds: []
+  }
+];
+
+
 module.exports = function(app) {
   var express = require('express');
   var golfersRouter = express.Router();
 
   golfersRouter.get('/', function(req, res) {
     res.send({
-      'golfers': [
-        { 
-          id: 1,
-          name: 'Shaner',
-          handicap: '18.6',
-          updated: '12 days ago'
-        },
-        { 
-          id: 2,
-          name: 'LongDavid',
-          handicap: '15.9',
-          updated: '19 days ago'
-        },
-        { 
-          id: 3,
-          name: 'Robo14',
-          handicap: '18.1',
-          updated: '2 days ago'
-        },
-        { 
-          id: 4,
-          name: 'Shortnstrait',
-          handicap: '16.0',
-          updated: '11 days ago'
-        }
-      ]
+      'golfers': golfers
     });
   });
 

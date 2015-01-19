@@ -1,1 +1,24 @@
-{{outlet}}
+<div class="search-bar">
+	{{input type="search" value=seachInput autofocus="autofocus" placeholder="Filter golfers"}}
+</div>
+
+<div class="container">
+	<table class="table golfer-table">
+		<thead>
+			<tr>
+				<th width="60%">GOLFER</th>
+				<th width="20%">HANDICAP</th>
+				<th width="20%">UPDATED</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each golfer in model}}
+				<tr>
+					<td class="name">{{link-to golfer.name 'rounds' golfer}}</td>
+					<td class="handicap">{{golfer.handicap}}</td>
+					<td class="updated">{{golfer.updated}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>
