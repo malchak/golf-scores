@@ -1,7 +1,6 @@
 # Golf-scores
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A cool like golf handicap tracking app, but mostly just an Ember-cli experiement.
 
 ## Prerequisites
 
