@@ -1,9 +1,9 @@
-<div class="search-bar">
+<div class="sub-header">
 	{{input type="search" value=seachInput autofocus="autofocus" placeholder="Filter golfers"}}
 </div>
 
 <div class="container">
-	<table class="table golfer-table">
+	<table class="table old-dudes-table">
 		<thead>
 			<tr>
 				<th width="60%">GOLFER</th>
@@ -16,7 +16,7 @@
 				<tr>
 					<td class="name">{{link-to golfer.name 'rounds' golfer}}</td>
 					<td class="handicap">{{golfer.handicap}}</td>
-					<td class="updated">{{golfer.updated}}</td>
+					<td class="date">{{golfer.updated}}</td>
 				</tr>
 			{{/each}}
 		</tbody>

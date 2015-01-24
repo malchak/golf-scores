@@ -11,7 +11,7 @@ var golfers = [
     name: 'LongDavid',
     handicap: '15.9',
     updated: '19 days ago',
-    rounds: [3]
+    rounds: [3, 2]
   },
   { 
     id: 3,

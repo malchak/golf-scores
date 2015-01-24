@@ -26,7 +26,15 @@ var rounds = [
     score: '90',
     datePlayed: '10/20/14',
     golfer: 1
+  },
+  {
+    id: 5,
+    course: 'Westchester',
+    score: '88',
+    datePlayed: '8/17/14',
+    golfer: 2
   }
+
   ];
 
 module.exports = function(app) {

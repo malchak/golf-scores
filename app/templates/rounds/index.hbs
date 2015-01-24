@@ -1,5 +1,18 @@
-<h3>rounds</h3>
-
-{{#each round in model}}
-	{{round.course}}
-{{/each}}
+<table class="table old-dudes-table">
+	<thead>
+		<tr>
+			<th width="60%">DATE PLAYED</th>
+			<th width="20%">COURSE</th>
+			<th width="20%">SCORE</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each round in model}}
+			<tr>
+				<td class="date">{{round.datePlayed}}</td>
+				<td>{{round.course}}</td>
+				<td>{{round.score}}</td>
+			</tr>	
+		{{/each}}
+	</tbody>
+</table>
